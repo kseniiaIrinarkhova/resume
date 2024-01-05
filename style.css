@@ -1,3 +1,4 @@
+/* main structure */
 .main-container{
     width: 100%;
     display: flex;
@@ -9,6 +10,9 @@
     border: 2px solid black;
     margin:2px;
     width: 96%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
 }
 .experience-cont{
 border: 2px dotted blue;
@@ -21,8 +25,29 @@ border: 2px dotted blue;
         width: 25%;
 }
 
+/* Introduction template*/
+.intro-basic{
+    width: 58%;
+    order: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    height: 180px;
+}
+.intro-contacts{
+    width: 38%;
+    order:2;
+}
+.intro-summary{
+    width: 96%;
+    order: 3;
+}
 .intro-photo{
-    width: 100px;
-    object-fit: contain;
-    border-radius: 15%;    
+    width: 200px;    
+    border-radius: 30px; 
+    height: 100%;   
+    object-fit: cover;
+}
+.intro-photo >img{
+    /* object-fit: scale-down; */
 }
