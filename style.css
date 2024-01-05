@@ -1,0 +1,28 @@
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5px;
+}
+.introduction-cont{
+    border: 2px solid black;
+    margin:2px;
+    width: 96%;
+}
+.experience-cont{
+border: 2px dotted blue;
+    margin: 2px;
+    width: 70%;
+}
+.skills-cont{
+    border: 2px ridge red;
+        margin: 2px;
+        width: 25%;
+}
+
+.intro-photo{
+    width: 100px;
+    object-fit: contain;
+    border-radius: 15%;    
+}
