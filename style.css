@@ -48,6 +48,3 @@ border: 2px dotted blue;
     height: 100%;   
     object-fit: cover;
 }
-.intro-photo >img{
-    /* object-fit: scale-down; */
-}
