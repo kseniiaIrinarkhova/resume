@@ -275,7 +275,84 @@ li{
     padding: 0 0 0 5px;
     margin: 5px;
 }
-.skill-level{
+.skill-level-blue{
     background-color: #3FA0C7;
     color: #282828;
+}
+
+.skill-level-green {
+    background-color: #6EA030;
+    color: #282828;
+}
+
+/*tag cloud*/
+
+/*rules for font size*/
+
+.cloud li[data-weight="1"] {
+    --size: 1;
+}
+
+.cloud li[data-weight="2"] {
+    --size: 2;
+}
+
+.cloud li[data-weight="3"] {
+    --size: 3;
+}
+
+.cloud li[data-weight="4"] {
+    --size: 4;
+}
+
+.cloud li[data-weight="5"] {
+    --size: 5;
+}
+.cloud li[data-weight="6"] {
+    --size: 6;
+}
+.cloud li[data-weight="7"] {
+    --size: 7;
+}
+.cloud li[data-weight="8"] {
+    --size: 8;
+}
+.cloud li[data-weight="9"] {
+    --size: 9;
+}
+
+.cloud{
+    list-style: none;
+    padding: 0 10px 0 10px ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5em;
+}
+
+.cloud li{
+    --color: #F7C515;
+    --size: 4;
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.125rem 0.25rem;
+    text-decoration: none;
+    position: relative;
+    color: var(--color);
+    font-size: calc(var(--size)*0.15rem + 0.25rem);
+    opacity: calc((15 - (9 - var(--size))) / 15);
+}
+
+
+ul.cloud li:nth-child(2n+1) {
+    --color: #3FA0C7;
+}
+
+ul.cloud li:nth-child(3n+1) {
+    --color: #6EA030;
+}
+
+ul.cloud li:nth-child(4n+1) {
+    --color: #EA2E00;
 }
