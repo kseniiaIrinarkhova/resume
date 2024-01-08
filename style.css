@@ -182,7 +182,7 @@ a {
     display: inline-block;
 }
 
-.header h1 {
+.header h1{
     display: inline-block;
     padding-left: 15px;
 }
@@ -254,4 +254,28 @@ li{
 
 .certification .years{
     font-size: 15px;
+}
+
+/*Skill container*/
+.skill-group{
+    padding: 10px 10px 0 10px ;
+}
+.skill-group h1{
+    font-size: 15px;
+}
+
+/*bar skill*/
+.bars{
+    padding:0;
+}
+.skill-name{
+    background-color: #373737;
+    width: 90%;
+    list-style: none;
+    padding: 0 0 0 5px;
+    margin: 5px;
+}
+.skill-level{
+    background-color: #3FA0C7;
+    color: #282828;
 }
