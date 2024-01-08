@@ -356,3 +356,39 @@ ul.cloud li:nth-child(3n+1) {
 ul.cloud li:nth-child(4n+1) {
     --color: #EA2E00;
 }
+
+/* circle skill*/
+
+.skill-circle{
+    width: 90%;
+    margin:10px
+}
+
+.skill-lable{
+    text-align: left;
+    width: 30%;
+    height: 2rem;
+    font-family: mainFontBold;
+}
+
+.skill-value{
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle{
+    --color: black;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 6px 1px rgba(252, 245, 232, 0.75);
+    background-color: var(--color);
+}
+
+.circle.blue{
+    --color:#3FA0C7;
+}
+
+.circle.green{
+    --color:#6EA030;
+}
