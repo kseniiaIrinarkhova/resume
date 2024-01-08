@@ -17,6 +17,23 @@
         'opsz' 24
 }
 
+.material-symbols-outlined.expand-mode {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.material-symbols-outlined.chevron-right {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    font-size: 20px;
+}
+
 * {
     font-family: mainFont;
     color: #757574;
@@ -131,22 +148,88 @@ a {
 
 /*experience block style*/
 
+.employment .header-mark {
+    background-color: #3FA0C7;
+}
+
+.employment .place-mark {
+    background-color: #3FA0C7;
+}
+
+.education .header-mark {
+    background-color: #6EA030;
+}
+.education .place-mark {
+    background-color: #6EA030;
+}
+.certification .header-mark {
+    background-color: #F7C515;
+}
+
 .header {
     width: 99%;
-    margin: 5px;
+    margin: 25px 5px 25px 5px;
     background-color: #373737;
-    height:25px;
-    display:flex;
+    height: 25px;
+    display: flex;
     align-items: center;
 }
-.header-mark{
-    background-color: aquamarine;
+
+.header-mark {
     border-radius: 3px;
     height: 25px;
     width: 25px;
     display: inline-block;
 }
-.header h1{
+
+.header h1 {
     display: inline-block;
     padding-left: 15px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 98%;
+    height: 50px;
+    flex-flow: row wrap;
+}
+
+.place {
+    display: flex;
+    align-items: center;
+    order: 1;
+}
+
+.place-mark {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.place h5 {
+    font-size: 15px;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 0 10px;
+    color: #FCF5E8;
+}
+
+.years {
+    font-size: 15px;
+    order: 2;
+    text-align: right;
+    font-family: mainFontBold;
+    margin-left: auto;
+    color: #FCF5E8;
+}
+
+.role {
+    width: 98%;
+    order: 3;
+    font-size: small;
+    padding-left: 30px;
 }
