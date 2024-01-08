@@ -1,3 +1,19 @@
+/* extra info*/
+@font-face {
+    font-family: mainFont;
+    src: url(font/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: mainFontBold;
+    src: url(font/Ubuntu-Bold.ttf);
+}
+* {
+    font-family: mainFont;
+    color: ivory;
+}
+body{
+    background-color: #141414;
+}
 /* main structure */
 .main-container{
     width: 100%;
@@ -7,35 +23,39 @@
     gap: 5px;
 }
 .introduction-cont{
-    border: 2px solid black;
+    border: 2px solid yellow;
     margin:2px;
-    width: 96%;
+    width: 900px;
     display: flex;
     flex-flow: row wrap;
     padding: 10px;
+    background-color: #282828;
 }
 .experience-cont{
 border: 2px dotted blue;
     margin: 2px;
-    width: 70%;
+    width: 600px;
+    padding: 5px;
+    background-color: #282828;
 }
 .skills-cont{
     border: 2px ridge red;
         margin: 2px;
-        width: 25%;
+        width: 300px;
+    background-color: #282828;
 }
 
 /* Introduction template*/
 .intro-basic{
-    width: 58%;
+    width: 500px;
     order: 1;
     display: flex;
     flex-flow: column wrap;
     align-content: space-around;
-    height: 180px;
+    height: 200px;
 }
 .intro-contacts{
-    width: 38%;
+    width: 400px;
     order:2;
 }
 .intro-summary{
@@ -43,8 +63,24 @@ border: 2px dotted blue;
     order: 3;
 }
 .intro-photo{
-    width: 200px;    
+    margin: 10px;
+    width: min(200px, 30%);    
     border-radius: 30px; 
-    height: 100%;   
+    height: max(200px, 100%);   
     object-fit: cover;
+}
+
+.intro-basic h1{
+    text-transform: uppercase;
+    font-family: mainFontBold;
+    font-size: larger;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.intro-basic h4{
+    font-family: mainFontBold;
+    color: aquamarine;
+    margin-top: 0px;
+    padding-top: 0px;
 }
