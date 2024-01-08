@@ -238,3 +238,20 @@ li{
     text-align: justify;
     padding: 0 10px 5px 0;
 }
+
+.course {
+    order: -1;
+    font-size: 15px;
+    padding-right: 5px;
+    border-right: 2px groove #FCF5E8;
+}
+
+.source{
+    order: 1;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.certification .years{
+    font-size: 15px;
+}
